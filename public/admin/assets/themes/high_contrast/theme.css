@@ -1,0 +1,16 @@
+/* Piel: Alto Contraste */
+:root {
+    --primary-bg: #000000;
+    --secondary-bg: #1a1a1a;
+    --header-bg: #000000;
+    --nav-bg: #000000;
+    --nav-hover-bg: #333333;
+    --text-color: #ffffff;
+    --text-muted-color: #eeeeee;
+    --border-color: #ffffff;
+    --accent-color: #ffff00; /* Amarillo brillante para el acento */
+    --accent-text-color: #000000; /* Texto negro para el acento */
+    --success-color: #00ff00;
+    --error-color: #ff0000;
+    --warning-color: #ffa500;
+}

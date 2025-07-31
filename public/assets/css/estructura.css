@@ -1,0 +1,66 @@
+/*
+========================================
+ESTRUCTURA.CSS
+Define el esqueleto principal y la disposición
+de los elementos clave de la página.
+========================================
+*/
+
+/* --- Configuración global y del cuerpo --- */
+html, body {
+  height: 100%; /* Asegura que el HTML y el Body ocupen toda la altura de la ventana */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Una fuente limpia y moderna */
+}
+
+/* --- Contenedor Principal --- */
+/*
+  Este es el contenedor más importante. Usamos Flexbox para crear un diseño de columna
+  que ocupa toda la altura de la pantalla (height: 100vh).
+*/
+#main-container {
+  display: flex;
+  flex-direction: column; /* Apila los elementos (header, content, footer) verticalmente */
+  min-height: 100vh; /* Altura mínima igual a la altura de la ventana del navegador */
+}
+
+/* --- Envoltura del Contenido --- */
+/*
+  Este div envuelve el <main>. La propiedad 'flex: 1' es la clave:
+  le dice a este contenedor que "crezca" y ocupe todo el espacio vertical
+  disponible que dejen el header y el footer.
+*/
+#content-wrap {
+  flex: 1;
+  display: flex; /* Hacemos que también sea un contenedor flex para centrar el main */
+  flex-direction: column;
+}
+
+main.container-fluid {
+  flex-grow: 1; /* El contenido principal también crece para ocupar el espacio */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* --- Pie de Página (Footer) --- */
+/*
+  El footer no necesita configuraciones complejas, ya que la estructura flex
+  de #main-container lo empujará naturalmente hacia abajo.
+  Le damos un poco de estilo para que se vea bien.
+*/
+.footer {
+  width: 100%;
+  flex-shrink: 0; /* Evita que el footer se encoja si el contenido es muy grande */
+  background-color: #f8f9fa; /* Un color de fondo suave, consistente con Bootstrap */
+  border-top: 1px solid #dee2e6; /* Una línea sutil para separarlo del contenido */
+}
+
+/* --- Clases de ayuda --- */
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: #6c757d;
+}

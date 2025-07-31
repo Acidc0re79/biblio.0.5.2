@@ -1,0 +1,43 @@
+
+/* Estilo consola para visor de logs */
+.log-container {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 1rem;
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-family: monospace;
+}
+
+.log-entry {
+    background-color: #2a2a2a;
+    border-left: 4px solid #666;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+.log-entry[data-level="ERROR"]   { border-left-color: #e06c75; }
+.log-entry[data-level="WARNING"] { border-left-color: #e5c07b; }
+.log-entry[data-level="INFO"]    { border-left-color: #61afef; }
+.log-entry[data-level="DEBUG"]   { border-left-color: #98c379; }
+
+.copy-button {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.copy-button:hover {
+    background-color: #666;
+}

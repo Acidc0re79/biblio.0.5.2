@@ -1,0 +1,149 @@
+/* ========================================= */
+/* TEMA POR DEFECTO - Biblioteca SYS         */
+/* Versión 2.0 - Refactorizado y Completo    */
+/* ========================================= */
+
+:root {
+    /* Paleta de Colores Principal (Ajustada para Claridad) */
+    --color-fondo-principal: #f4f6f9; /* Un gris muy claro para el fondo general */
+    --color-fondo-contenido: #ffffff; /* Contenido principal en blanco puro */
+    --color-texto-principal: #212529; /* Texto principal oscuro (casi negro) */
+    --color-texto-secundario: #6c757d; /* Texto secundario gris */
+    --color-primario: #007bff; /* Azul primario de Bootstrap */
+    --color-secundario: #6c757d; /* Gris secundario */
+    --color-exito: #28a745; /* Verde */
+    --color-error: #dc3545; /* Rojo */
+    --color-aviso: #ffc107; /* Amarillo */
+    --color-borde-suave: #dee2e6; /* Para bordes y separadores */
+}
+
+/* --- ESTILOS GLOBALES --- */
+body {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* --- HEADER --- */
+.header {
+    background-color: var(--color-fondo-contenido);
+    border-bottom: 1px solid var(--color-borde-suave);
+}
+.user-avatar {
+    border: 2px solid var(--color-primario);
+}
+.user-dropdown {
+    background-color: var(--color-fondo-contenido);
+    border: 1px solid var(--color-borde-suave);
+}
+.dropdown-link {
+    color: var(--color-texto-principal);
+}
+.dropdown-link:hover {
+    background-color: #f8f9fa;
+}
+
+/* --- BARRA DE NAVEGACIÓN PRINCIPAL --- */
+.main-nav {
+    background-color: #343a40;
+}
+.main-nav a {
+    color: rgba(255, 255, 255, 0.75);
+}
+.main-nav a:hover {
+    color: #ffffff;
+}
+
+/* --- PÁGINA DE PERFIL --- */
+.profile-container .card {
+    border: 1px solid var(--color-borde-suave);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* --- PÁGINA DE INSIGNIAS --- */
+.insignia-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    color: var(--color-texto-principal);
+}
+.insignia-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+.categoria-titulo {
+    color: var(--color-texto-principal);
+    border-bottom: 1px solid var(--color-borde-suave);
+}
+.insignia-puntos {
+    color: var(--color-secundario);
+}
+/* Colores de Borde por Rareza */
+.rareza-común { border-color: #adb5bd; }
+.rareza-poco-común { border-color: #28a745; }
+.rareza-rara { border-color: #007bff; }
+.rareza-épica { border-color: #6f42c1; } /* Púrpura */
+.rareza-legendaria { border-color: #fd7e14; } /* Naranja */
+
+
+/* --- MODALES (Estilo General para Bootstrap) --- */
+/* Bootstrap maneja la mayoría de los estilos del modal.
+   Aquí solo ajustamos colores si es necesario, pero
+   usar las clases de Bootstrap es más que suficiente
+   para el tema claro. No necesitamos reglas extra complejas. */
+
+/* --- FORMULARIOS (Para login_form, etc.) --- */
+.form-wrapper {
+    background: var(--color-fondo-contenido);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.form-toggle button {
+    color: var(--color-texto-secundario);
+}
+.form-toggle button.active {
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-primario);
+}
+.form-box h2 {
+    color: var(--color-texto-principal);
+}
+.form-box .btn {
+    background-color: var(--color-primario);
+    color: #fff;
+}
+.form-box .btn:hover {
+    background-color: #0069d9;
+}
+.google-btn {
+    background-color: #fff;
+    color: #444;
+    border: 1px solid var(--color-borde-suave);
+}
+.google-btn:hover {
+    background-color: #f8f9fa;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+    background-color: #343a40;
+    color: rgba(255, 255, 255, 0.7);
+}
+.site-footer a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ------------------------------------------------------------- */
+/* NOTA: Las reglas antiguas con nombres como .perfil-box,       */
+/* .modal-overlay, etc., han sido eliminadas porque ahora        */
+/* usamos las clases de Bootstrap (.card, .modal) y la estructura*/
+/* de los archivos CSS de estructura para el layout. Esto hace  */
+/* que el tema sea más limpio y fácil de mantener.               */
+/* ------------------------------------------------------------- */

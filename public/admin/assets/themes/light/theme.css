@@ -1,0 +1,20 @@
+/* Piel: Claro */
+:root {
+    --primary-bg: #f4f6f9;
+    --secondary-bg: #ffffff;
+    --header-bg: #ffffff;
+    --nav-bg: #343a40;
+    --nav-hover-bg: #495057;
+    --text-color: #212529;
+    --text-muted-color: #6c757d;
+    --border-color: #dee2e6;
+    --accent-color: #007bff;
+    --accent-text-color: #ffffff;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --warning-color: #ffc107;
+}
+/* Pequeños ajustes para el tema claro */
+body { color: var(--text-color); }
+.admin-nav a { color: #f8f9fa; }
+.admin-nav a:hover { color: #ffffff; }

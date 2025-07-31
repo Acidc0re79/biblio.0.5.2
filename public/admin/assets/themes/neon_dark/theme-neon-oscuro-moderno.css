@@ -1,0 +1,102 @@
+
+/* 🎨 Nuevo Tema Visual - Neon Oscuro Moderno */
+body {
+    background-color: #111;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #4dd0e1;
+    text-decoration: none;
+}
+a:hover {
+    color: #00e5ff;
+    text-decoration: underline;
+}
+
+.admin-header, .admin-nav {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+.admin-nav {
+    color: #ccc;
+}
+.admin-nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #4dd0e1;
+    font-weight: bold;
+    border-left: 4px solid transparent;
+}
+.admin-nav a:hover {
+    background-color: #2b2b2b;
+    border-left: 4px solid #00e5ff;
+}
+
+.admin-nav a.active {
+    background-color: #263238;
+    border-left: 4px solid #00e5ff;
+    color: #fff;
+}
+
+.admin-main {
+    background-color: #121212;
+    padding: 2rem;
+    border-left: 1px solid #222;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.dashboard-widget {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+}
+
+.dashboard-widget h3 {
+    color: #80d8ff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button, .btn {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+button:hover, .btn:hover {
+    background-color: #00acc1;
+}
+
+.table {
+    width: 100%;
+    background-color: #1a1a1a;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    border: 1px solid #333;
+    color: #eee;
+}
+.table th {
+    background-color: #263238;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], select {
+    background-color: #2c2c2c;
+    color: #eee;
+    border: 1px solid #444;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
